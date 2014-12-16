@@ -1,17 +1,16 @@
-[![Build Status](https://travis-ci.org/meteor-useraccounts/unstyled.svg?branch=master)](https://travis-ci.org/meteor-useraccounts/unstyled)
-useraccounts:unstyled
+useraccounts:polymer
 =====================================
 
-Meteor sign up and sign in templates (and much more!) ustyled
+Meteor sign up and sign in templates (and much more!) using polymer
 
 This package depends on [useraccounts:core](https://atmospherejs.com/useraccounts/core)
 
 Learn more [here](http://accounts-templates.meteor.com) or have a look at the full [documentation](https://github.com/meteor-useraccounts/core).
 
 
-## Bring Your Own CSS
+## Bring your own Polymer
 
-Adding this package with `meteor add useraccounts:unstyled` does not add any css/less/sass rules but for the colors for social login buttons. This is to let you write your own ones!
+You have to add polymer into your project for this to work.
 
 ## Writing Custom CSS Rules
 
