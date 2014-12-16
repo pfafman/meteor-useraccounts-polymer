@@ -1,7 +1,7 @@
 <template name="atError">
   <div class="at-error">
     {{#each error}}
-      <p>{{errorText}}</p>
+      <paper-toast text="{{errorText}}" onclick="discardDraft(el)" opened=true></paper-toast>
     {{/each}}
   </div>
 </template>
