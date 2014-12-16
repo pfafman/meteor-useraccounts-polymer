@@ -9,8 +9,7 @@
       label="{{displayName}} {{#unless required}}{{optionalText}}{{/unless}}"
       class="{{#if hasError}}invalid{{/if}}"
       isInvalid={{hasError}}
-      error="{{errorText}}"
-    >
+      error="{{errorText}}">
       <input type="{{type}}" id="at-field-{{_id}}" name="at-field-{{_id}}" placeholder="{{placeholder}}" autocapitalize="none" autocorrect="off">
     </paper-input-decorator>
     {{#if hasIcon}}

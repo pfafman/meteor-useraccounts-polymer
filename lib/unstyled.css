@@ -58,6 +58,9 @@
   background: #555;
 }
 
+#at-nav-button {
+  font-size: 14px;
+}
 .at-input.validating * {
   cursor:progress;
 }
