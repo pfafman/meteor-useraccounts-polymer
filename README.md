@@ -1,7 +1,8 @@
 useraccounts:polymer
 =====================================
 
-Meteor sign up and sign in templates (and much more!) using polymer
+Meteor sign up and sign in templates (and much more!) using polymer.
+[Test Site](Site at http://polymer-user-accounts-testsite.meteor.com)
 
 This package depends on [useraccounts:core](https://atmospherejs.com/useraccounts/core)
 
