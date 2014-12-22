@@ -1,6 +1,7 @@
 <template name="atPwdForm">
   <div class="at-pwd-form">
-    <form role="form" id="at-pwd-form" class="{{disabled}}" novalidate action="#" method="POST">
+   
+    <di-form data-action="sign-in" id="at-pwd-form" class="{{disabled}}" >
       {{#each fields}}
         {{> atInput}}
       {{/each}}
@@ -8,6 +9,7 @@
         {{> atPwdLink}}
       {{/if}}
       {{> atPwdFormBtn}}
-    </form>
+    </di-form>
+  
   </div>
 </template>
