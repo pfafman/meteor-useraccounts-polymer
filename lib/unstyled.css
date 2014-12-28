@@ -70,3 +70,11 @@
   padding: 20px;
   margin: auto;
 }
+
+.at-title h2 {
+  margin: 0px;
+}
+
+paper-toast {
+  color: #fff;
+}

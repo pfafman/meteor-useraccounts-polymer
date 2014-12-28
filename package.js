@@ -1,8 +1,8 @@
 Package.describe({
     summary: "Accounts Templates for Polymer",
     version: "0.2.0",
-    name: "pfafman:user-acounts-polymer",
-    git: "https://github.com/pfafman/meteor-useraccounts-polymet.git",
+    name: "pfafman:user-accounts-polymer",
+    git: "https://github.com/pfafman/meteor-useraccounts-polymer.git",
 });
 
 Package.on_use(function(api, where) {
@@ -14,11 +14,13 @@ Package.on_use(function(api, where) {
     ], "client");
 
     api.use([
-        "useraccounts:core",
+        //"useraccounts:core",
+        "pfafman:user-accounts-core"
     ], ["client", "server"]);
 
     api.imply([
-        "useraccounts:core@1.4.0",
+        //"useraccounts:core@1.4.0",
+        "pfafman:user-accounts-core@1.4.0"
     ], ["client", "server"]);
 
     api.add_files([
@@ -60,8 +62,8 @@ Package.on_use(function(api, where) {
 
 Package.on_test(function(api) {
     api.use([
-        "pfafman:user-acounts-polymer",
-        "pfafman:useraccounts-core",
+        "pfafman:user-accounts-polymer",
+        //"user-accounts:core",
     ]);
 
     api.use([
