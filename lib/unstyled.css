@@ -58,7 +58,7 @@
   background: #555;
 }
 
-#at-nav-button {
+.at-nav-button {
   font-size: 14px;
 }
 .at-input.validating * {
@@ -77,4 +77,8 @@
 
 paper-toast {
   color: #fff;
+}
+
+.at-link {
+  cursor: pointer;
 }

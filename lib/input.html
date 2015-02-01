@@ -7,10 +7,10 @@
     <paper-input-decorator 
       floatingLabel
       label="{{displayName}} {{#unless required}}{{optionalText}}{{/unless}}"
-      class="{{#if hasError}}invalid{{/if}}"
+      class="{{#if hasError}}invalid{{/if}} {{extraClass}}"
       isInvalid={{hasError}}
       error="{{errorText}}">
-      <input type="{{type}}" id="at-field-{{_id}}" name="at-field-{{_id}}" placeholder="{{placeholder}}" autocapitalize="none" autocorrect="off">
+      <input type="{{type}}" id="at-field-{{_id}}" name="{{_id}}" placeholder="{{placeholder}}" autocapitalize="none" autocorrect="off">
     </paper-input-decorator>
     {{#if hasIcon}}
         <span class="{{iconClass}}"></span>
@@ -20,7 +20,7 @@
 
 <template name="atCheckboxInput">
   <div class="at-input">
-      <input type="{{type}}" id="at-field-{{_id}}" name="at-field-{{_id}}" {{disabled}}>
+      <input type="{{type}}" id="at-field-{{_id}}" name="{{_id}}" {{disabled}}>
       <label for="at-field-{{_id}}">{{displayName}}</label>
   </div>
 </template>
@@ -28,7 +28,7 @@
 <template name="atSelectInput">
   <div class="at-input">
     <label for="at-field-{{_id}}">{{displayName}}</label>
-    <select id="at-field-{{_id}}" name="at-field-{{_id}}">
+    <select id="at-field-{{_id}}" name="{{_id}}">
       {{#each values}}
         <option value="{{value}}">{{text}}</option>
       {{/each}}
@@ -42,12 +42,12 @@
   </div>
   {{#each values}}
     <div class="at-input">
-      <input id="at-field-{{id}}-choice-{{value}}" type="radio" name="at-field-{{id}}" value={{value}}>
+      <input id="at-field-{{id}}-choice-{{value}}" type="radio" name="{{id}}" value={{value}}>
       <label>{{text}}</label>
     </div>
   {{/each}}
 </template>
 
 <template name="atHiddenInput">
-  <input type="hidden" id="at-field-{{_id}}" name="at-field-{{_id}}">
+  <input type="hidden" id="at-field-{{_id}}" name="{{_id}}">
 </template>

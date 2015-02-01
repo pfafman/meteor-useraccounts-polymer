@@ -1,4 +1,4 @@
-<template name="atError">
+<template name="atErrorOld">
   <div class="at-error">
     {{#each error}}
       {{errorText}}
@@ -6,6 +6,16 @@
   </div>
 </template>
 
-<template name="atToast">
-   <paper-toast text="{{errorText}}" opened></paper-toast>
+
+<template name="atError">
+  <div class="at-error">
+    {{#each error}}
+      {{> atErrorToast}}
+    {{/each}}
+  </div>
+</template>
+
+
+<template name="atErrorToast">
+  <paper-toast text="{{errorText}}" opened></paper-toast>
 </template>
